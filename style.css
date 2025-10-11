@@ -31,8 +31,8 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
-    /*opacity: 0;
-    pointer-events: none;*/
+    opacity: 0;
+    pointer-events: none;
 }
 
 .modal-container.show
@@ -75,6 +75,8 @@ form input
     outline: none;
     border: 2px solid #ccc;
     border-radius: 5px;
+    font-size: 1rem;
+    font-family: "Oswald", sans-serif;
 }
 form input:focus
 {
@@ -98,4 +100,30 @@ form input:focus
     cursor: pointer;
     border-radius: 10px;
     font-family: "Oswald", sans-serif;
+}
+
+
+.displayWrapper
+{
+    display: flex;
+    gap : 1.25rem;
+    margin: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.displayWrapper .card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: "Oswald", sans-serif;
+    
 }
