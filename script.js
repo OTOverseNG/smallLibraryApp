@@ -131,5 +131,5 @@ submit.addEventListener("click", (e)=>{
 
 deleteCard.addEventListener('click', () => {
 
-    myLibrary
+    myLibrary.filter()
 })
