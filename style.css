@@ -1,6 +1,6 @@
 .header
 {
-    background: linear-gradient(to right, #1e3c72, #2a5298);
+    background-color:  #0284C7;
     display: flex;
     align-items: center;
     padding: 10px 40px;
@@ -110,6 +110,7 @@ form input:focus
     margin: 25px;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 
 
@@ -117,14 +118,15 @@ form input:focus
     display: flex;
     flex-direction: column;
     gap: 10px;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to right, #1e3c72, #2a5298);
+    justify-content: space-between;
+    background-color:  #0284C7;
     color: white;
     padding: 20px;
     border-radius: 10px;
     font-size: 20px;
     font-family: "Oswald", sans-serif;
-    flex-basis: 300px;
+    width: 250px;
+    min-height: 180px;
+    
     
 }

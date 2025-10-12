@@ -75,7 +75,8 @@ function displayBook(){
 
         const deleteButton = document.createElement('button');
         deleteButton.textContent = "Delete Book";
-        deleteButton.classList.add("button");
+        deleteButton.classList.add("delete");
+        deleteButton.dataset.id = book.id;
         deleteButton.style.cssText = `
             padding: 5px 10px ;
             border-radius: 10px;
@@ -127,7 +128,17 @@ submit.addEventListener("click", (e)=>{
     bookTitle.value = "";
     numberOfpages.value = "";
     modal_container.classList.remove('show');
-    console.log(myLibrary);
+    
 });
 
+display.addEventListener('click', (e)=> {
 
+    if(e.target.classList.contains('delete')){
+        const bookId = e.target.dataset.id;
+        const newLibrary = myLibrary.filter(book => book.id != bookId);
+        myLibrary.length = 0;
+        myLibrary.push(...newLibrary);
+
+        displayBook();
+    }
+})
