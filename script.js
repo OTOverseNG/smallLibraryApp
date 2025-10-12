@@ -6,7 +6,7 @@ const bookAuthor = document.querySelector('.book_author');
 const numberOfpages = document.querySelector('.number_of_pages');
 const display = document.querySelector('.displayWrapper');
 const submit = document.querySelector('.submit');
-const deleteCard = document.querySelector('.delete');
+
 
 
 open_modal.addEventListener("click", () => {
@@ -75,7 +75,7 @@ function displayBook(){
 
         const deleteButton = document.createElement('button');
         deleteButton.textContent = "Delete Book";
-        deleteButton.classList.add = "delete";
+        deleteButton.classList.add("button");
         deleteButton.style.cssText = `
             padding: 5px 10px ;
             border-radius: 10px;
@@ -127,9 +127,5 @@ submit.addEventListener("click", (e)=>{
     bookTitle.value = "";
     numberOfpages.value = "";
     modal_container.classList.remove('show');
+    console.log(myLibrary);
 });
-
-deleteCard.addEventListener('click', () => {
-
-    myLibrary.filter()
-})
